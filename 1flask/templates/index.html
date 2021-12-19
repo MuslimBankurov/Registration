@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+<h1> Регистрация пользователя </h1>
+<form action="" methods="POST">
+    <input type="text" name="Username" minlength="6" placeholder="enter your name" required>
+    <input type="email" name="email" placeholder="enter your email" required>
+    <input type="password" minlength="8"  name="password" placeholder="enter your password" required>
+    <input type="password" name="confirm_password" placeholder="confirm_password" required>
+    <button>Submit</button>
+
+
+{% endblock %}
